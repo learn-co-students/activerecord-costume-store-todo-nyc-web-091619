@@ -1,0 +1,12 @@
+class AddColumnsPriceSizeAndImageURL < ActiveRecord::Migration[4.2]
+    # add_column :costumes, :price, :float
+    # add_column :costumes, :size, :integer
+    # add_column :costumes, :image_url, :string
+
+    def change
+        add_column :costumes do |t|
+            t.float :price
+            t.integer :size
+            t.string :image_url
+    end
+end
